@@ -1,5 +1,7 @@
+//need to add profile Image in UserSchema
+
 var mongoose = require('mongoose');
-var bcrypt = require(bcrypt-nodejs);
+var bcrypt = require('bcrypt-nodejs');
 
 var Schema = mongoose.Schema;
 
@@ -7,8 +9,10 @@ var UserSchema = new Schema({
 	
 	name: String,
 	username: { type: String, required: true, index: { unique: true}},
-	profileImage: {data: buffer, contentType: String},
-	password: { type: String, required: true, select: false }
+	/*profileImage: {data: buffer, contentType: String},*/
+	password: { type: String, required: true, select: false },
+	/*facebook: String,
+	twitter: String*/
 
 });
 
@@ -18,7 +22,7 @@ UserSchema.pre('save', function(next){
 	var user = this; //`this` is referring to UserSchema object
 	if (!user.isModified('password')) return next();
 
-	bcrypt.hash(user.passwor(d, null, null, function(err, hash){
+	bcrypt.hash(user.password, null, null, function(err, hash){
 			if (err) return next(err);
 			user.password = hash;
 			next();
