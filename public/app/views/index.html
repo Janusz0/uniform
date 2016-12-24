@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html ng-app = "MyApp">
 <head>
-	<title>Uniform</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<base href="/" />
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is an application to create an unique identity of the users on the internet">
+	<meta name="author" content="janusz">
 
+	<title>Uniform - Your Unique Identity</title>
+
+	<!-- Title Bar Image -->
+	<link rel="shortcut icon" href="app/views/favicon.ico">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="app/views/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<!-- BOOTSTRAP -->
+	 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  -->
+	<!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/app/views/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="/app/views/css/creative.min.css" rel="stylesheet">
+
+	<!-- Angular CDN -->
 	<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+	<!-- ngRoute CDN -->
 	<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0-rc.2/angular-route.min.js"></script>
 
-	<script type="text/javascript" src="app/app.js"></script>
+	<!-- Services -->
+
+	<!-- Controllers -->
+
+
 </head>
-<body>
-	
+<body id="page-top">
+	<nav id = "mainNav" class = "navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header" style="backgroynd-color:black;">
+			<button type = "button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target = "#bs-example-navbar-collapse-1">
+				<span class = "sr-only">Toggle navigation</span> Menu
+				<i class = "fa fa-bars"></i>
+			</button>
+			<a class = "navbar-brand page-scroll" href="#page-top">Uniform</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a class="page-scroll" href="#about">About</a>
+				</li>
+				<li>
+					<a class="page-scroll" href="#get-started">Get Started!</a>
+				</li>
+				<li>
+					<a class="page-scroll" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- navbar-collapse -->
+	</div>
+	<!-- container fluid -->
+	</nav>
+
+	<!-- <main class = "container">
+		<div ng-view > </div>
+	</main> -->
+
+	<header>
+		<div class="header-content">
+			<div class="header-content-inner">
+				<h1 id="homeHeading">Get yourself an unique identity on the internet</h1>
+				<hr>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+			</div>
+		</div>
+	</header>
+
+	<div ng-view>
+		<!-- jQuery -->
+	    <script src="app/views/vendor/jquery/jquery.min.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="app/views/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	    <!-- Plugin JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	    <script src="app/views/vendor/scrollreveal/scrollreveal.min.js"></script>
+	    <script src="app/views/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	    <!-- Theme JavaScript -->
+	    <script src="app/views/js/creative.min.js"></script>
+
+		<script type="text/javascript" src = "app/app.js"></script>
+		<script type="text/javascript" src = "app/app.routes.js"></script>
+	</div>
+
 </body>
 </html>

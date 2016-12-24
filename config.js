@@ -1,6 +1,6 @@
 module.exports = {
 
-	"database": "mongodb://root:abc123@ds113628.mlab.com:13628/uniform",
+	"database": "mongodb://localhost/uniform",
 	"port": process.env.PORT || 3000,
-	"secretKey": "YourSecretKey"
+	"secretKey": "Baba123"
 }

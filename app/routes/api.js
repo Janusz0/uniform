@@ -127,7 +127,7 @@ api.use(function(req, res, next){
 	});*/
 
 	api.put('/', function(req, res, next){
-		User.findOneAndUpdate(req.decoded.id, {
+		Profile.findOneAndUpdate(req.decoded.id, {
 				facebook: req.body.facebook,
 				twitter: req.body.twitter
 			}, function(err, links){
